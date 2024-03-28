@@ -23,9 +23,12 @@ createApp({
 
         },
         prevSlide() {
+            // se il numero dell'indice attivo è maggiore di 0
             if (this.activeIndexSlide > 0) {
+                //riduci il numero dell'indice
                 this.activeIndexSlide--;
             } else {
+                // portalo all'ultimo indice dell'array (array.length - 1)
                 this.activeIndexSlide = this.slides.length - 1;
             }
 
