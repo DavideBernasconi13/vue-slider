@@ -9,6 +9,9 @@ createApp({
             slides: slides,
             activeIndexSlide: 0
         }
+    },
+    methods: {
+
     }
 
 }).mount('#app')
