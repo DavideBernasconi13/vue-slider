@@ -29,8 +29,9 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
+                    <div class="prev" @click="prevSlide"></div>
+                    <div class="next" @click="nextSlide"></div>
+                    <!-- passa la classe dinamicamente facendo un controllo su l'indice dell'array che deve essere uguale all'immagine-->
                     <div class="thumb" :class="{'active': image === activeIndexSlide }"
                         v-for="(slide, image) in slides">
                         <img :src="slide.image" :alt="slide.title" />
