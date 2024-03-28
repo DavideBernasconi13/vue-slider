@@ -1,13 +1,14 @@
 import { slides } from './data.js';
 
-const { createApp } = Vue; 
+const { createApp } = Vue;
 
-createApp{
-    (
-        data(){
+createApp({
+
+    data() {
         return {
-
+            slides: slides,
+            activeIndexSlide: 0
         }
     }
-)
-}.mounth('#app')
+
+}).mount('#app')
