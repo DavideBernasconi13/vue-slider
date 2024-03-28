@@ -31,7 +31,9 @@ createApp({
                 // portalo all'ultimo indice dell'array (array.length - 1)
                 this.activeIndexSlide = this.slides.length - 1;
             }
-
+        },
+        showImage(clickedImage) {
+            this.activeIndexSlide = clickedImage;
         }
     }
 
